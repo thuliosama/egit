@@ -1,4 +1,5 @@
 #summary Setting up Mylyn to use this issue tracker
+#labels Featured
 
 = Update Mylyn =
 
