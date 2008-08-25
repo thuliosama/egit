@@ -10,6 +10,8 @@ from http://www.eclipse.org/mylyn/downloads/
   * http://download.eclipse.org/tools/mylyn/update/e3.4
   * http://download.eclipse.org/tools/mylyn/update/incubator
 
+If the update sites do not show up when adding them, you already have mylin installed. It may be the wrong version so select "Manage Sites" and check the new update site so it will actually be searched for newer versions of Mylyn.
+
 Install the *Web Templates (Generic Web Connector)* plugin so Eclipse can scrape the code.google.com website interface for you.
 
 = Configure Mylyn =
