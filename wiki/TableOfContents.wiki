@@ -1,12 +1,15 @@
 #summary Table of contents.
 
- * JGit Tutorial
+ * [JGitTutorial JGit Tutorial]
    * Taking JGit for a spin
    * Revision walking
    * Tree traversal
    * Working with the index
    * Creating a commit
    * Testing JGit
+   * Advanced topics
+     * Reducing memory usage
+     * Configuring JGit
 
  * Howtos
    * [ConfiguringMylyn Setting up Mylyn to use this issue tracker]
