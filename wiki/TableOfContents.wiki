@@ -6,7 +6,7 @@
    * Tree Traversal
    * Working with the Index
    * Creating a Commit
-   * Testing JGit
+   * [JGitTutorialTesting Testing JGit]
    * Advanced Topics
      * Reducing Memory Usage
      * Configuring JGit
