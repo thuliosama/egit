@@ -1,14 +1,14 @@
 #summary Table of contents.
 
  * [JGitTutorial JGit Tutorial]
-   * Taking JGit for a spin
-   * Revision walking
-   * Tree traversal
-   * Working with the index
-   * Creating a commit
+   * [JGitTutorialIntro Taking JGit for a Spin]
+   * Revision Walking
+   * Tree Traversal
+   * Working with the Index
+   * Creating a Commit
    * Testing JGit
-   * Advanced topics
-     * Reducing memory usage
+   * Advanced Topics
+     * Reducing Memory Usage
      * Configuring JGit
 
  * Howtos
