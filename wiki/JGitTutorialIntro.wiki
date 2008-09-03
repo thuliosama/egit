@@ -28,7 +28,7 @@ It should print the version that was printing during the build.
 
 == Overview ==
 
-All commands provide a helpful message on what they do when given the -h flag.
+When given the -h flag, commands provide a helpful message listing what flags they support.
 {{{
 prompt$ ./jgit version -h
 jgit version [--help (-h)]
