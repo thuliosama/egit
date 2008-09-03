@@ -1,0 +1,7 @@
+#summary Getting started with JGit.
+
+= JGit Tutorial =
+
+If you are new to JGit this tutorial will help you get started with using JGit. It will cover some of the basic tasks of working with git repositories, such walking revisions, inspecting trees, and provide hints to how you should design your program to best make use of JGit.
+
+_Note: This tutorial is currently a work in progress. So for the time being most of the pages are either empty or simple stubs. Contributions and ideas on how to improve this tutorial are very welcome._
