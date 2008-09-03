@@ -1,0 +1,3 @@
+#summary The display name for Google Documentation Reader.
+#labels Deprecated
+EGit
