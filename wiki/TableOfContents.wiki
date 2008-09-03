@@ -8,6 +8,7 @@
    * Creating a Commit
    * [JGitTutorialTesting Testing JGit]
    * Advanced Topics
+     * Graphical Capabilities
      * Reducing Memory Usage
      * Configuring JGit
 
