@@ -1,4 +1,4 @@
-#summary Building and running the JGIt front-end.
+#summary Building and running the JGit front-end.
 
 = Taking JGit for a Spin =
 
