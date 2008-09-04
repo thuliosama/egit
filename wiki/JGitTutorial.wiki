@@ -25,7 +25,7 @@ If you are already familiar with how git stores data under the hood, the object 
 
 == Error Handling ==
 
-Many operations in the library may require some sort of IO operations, such as loading an object or pack file into memory. As a result, calls that touch a code path using IO access may throw exceptions.
+Many operations in the library may require some sort of IO operations, such as loading an object or pack file into memory. As a result, calls that touch a code path using IO access can throw exceptions.
 
  * Best practice.
  * Overview of things in org.spearce.jgit.errors
