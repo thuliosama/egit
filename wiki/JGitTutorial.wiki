@@ -5,3 +5,27 @@
 If you are new to JGit this tutorial will help you get started with using JGit. It will cover some of the basic tasks of working with git repositories, such walking the revision history, inspecting trees, and provide hints to how you should design your program to best make use of JGit. During the tutorial you will be presented with code that deals with solving one particular problem. We hope that you will be able to adapt this sample code to suit your own needs.
 
 _Note: This tutorial is currently a work in progress. So for the time being most of the pages are either empty or simple stubs. Contributions and ideas on how to improve this tutorial are very welcome._
+
+== Design Philosophy ==
+
+ * Abstractions?
+ * Speed?
+
+== The Basic Object Model ==
+
+If you are already familiar with how git stores data under the hood, the object model used by JGit should come quite natural for you.
+
+ * Commit
+ * Tag
+ * Tree
+ * Blob
+
+ * See JGitTutorialRevWalk JGitTutorialTreeWalk
+
+== Error Handling ==
+
+Many operations in the library may require some sort of IO operations, such as loading an object or pack file into memory. As a result, calls that touch a code path using IO access may throw exceptions.
+
+ * Best practice.
+ * Overview of things in org.spearce.jgit.errors
+ * Caveats?
