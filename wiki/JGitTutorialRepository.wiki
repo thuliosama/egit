@@ -1,0 +1,14 @@
+#summary How to access the basic parts of a git repository.
+
+= The Repository =
+
+Introduction to the Repository class.
+
+== Creating a new repository ==
+
+ * create()
+ * Caveats? No hooks.
+
+== The Configuration File ==
+
+ * Getting and setting things from/in .git/config
