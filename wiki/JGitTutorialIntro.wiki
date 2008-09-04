@@ -55,7 +55,7 @@ The commands are modeled after their corresponding command in the git CLI. We wi
 
 == Inspecting the Repository ==
 
-Before inspecting the most recent commits, you probably want to know which branches the repository contains and what branch is currently checked out. Using the branch commands `-v` flag, you get a small summary of branches, their revision, and the first line of the revisions commit message.
+Before inspecting the most recent commits, you probably want to know which branches the repository contains and what branch is currently checked out. Using the branch commands `-v` flag, you get a small summary of branches, their revision, and the first line of the revision's commit message.
 {{{
 prompt$ ./jgit branch -v
   jf/pathof 4735f32 More fixes from Shawn
