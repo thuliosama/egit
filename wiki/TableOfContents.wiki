@@ -2,7 +2,6 @@
 
  * [JGitTutorial JGit Tutorial]
    * [JGitTutorialIntro Taking JGit for a Spin]
-   * [JGITTutorialModel The Basic Object Model]
    * [JGitTutorialRepository The Repository]
    * [JGitTutorialRevWalk Revision Walking]
    * [JGitTutorialTreeWalk Tree Traversal]
