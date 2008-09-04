@@ -14,9 +14,6 @@
      * Reducing Memory Usage
      * Configuring JGit
    * [JGitTutorialEnd Lessons Learnt and Beyond]
-     * Wrap up the tutorial
-     * More resources: javadoc, ...
-     * Contributing
 
  * Howtos
    * [ConfiguringMylyn Setting up Mylyn to use this issue tracker]
