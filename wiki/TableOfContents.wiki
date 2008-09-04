@@ -5,14 +5,18 @@
    * [JGitTutorialRepository The Repository]
    * [JGitTutorialRevWalk Revision Walking]
    * [JGitTutorialTreeWalk Tree Traversal]
-   * Working with the Index
+   * [JGitTutorialDirCache Working with the Index]
    * Creating a Commit
    * Synchronizing with Remote Repositories
    * [JGitTutorialTesting Testing JGit]
-   * Advanced Topics
+   * Hints and Advanced Topics
      * Graphical Capabilities
      * Reducing Memory Usage
      * Configuring JGit
+   * [JGitTutorialEnd Lessons Learnt and Beyond]
+     * Wrap up the tutorial
+     * More resources: javadoc, ...
+     * Contributing
 
  * Howtos
    * [ConfiguringMylyn Setting up Mylyn to use this issue tracker]
