@@ -2,8 +2,9 @@
 
  * [JGitTutorial JGit Tutorial]
    * [JGitTutorialIntro Taking JGit for a Spin]
-   * Revision Walking
-   * Tree Traversal
+   * [JGitTutorialRepository The Repository]
+   * [JGitTutorialRevWalk Revision Walking]
+   * [JGitTutorialTreeWalk Tree Traversal]
    * Working with the Index
    * Creating a Commit
    * [JGitTutorialTesting Testing JGit]
