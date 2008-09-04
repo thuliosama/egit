@@ -13,6 +13,7 @@ Git is all about history.
 
  * Author/committer filters
  * Message
+ * Creating your own filter: e.g. Signed-off-by filter of "Monday" date filter
 
 == Reducing Memory Usage ==
 
