@@ -15,6 +15,9 @@ _Note: This tutorial is currently a work in progress. So for the time being most
 
 If you are already familiar with how git stores data under the hood, the object model used by JGit should come quite natural for you.
 
+ * Inheritance: e.g. Commit "is an" ObjectId "is a" ..
+
+ * ObjectId
  * Commit
  * Tag
  * Tree
