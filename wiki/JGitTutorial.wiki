@@ -32,3 +32,8 @@ Many operations in the library may require some sort of IO operations, such as l
  * Best practice.
  * Overview of things in org.spearce.jgit.errors
  * Caveats?
+
+== Limitations ==
+
+ * Unsupported git features
+ * Diff engine.
