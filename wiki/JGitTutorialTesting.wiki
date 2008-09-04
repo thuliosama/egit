@@ -2,7 +2,7 @@
 
 = Testing JGit =
 
-If you are intending to develop and extend JGit, you probably want to check that you didn't break anything. To accomplish this you can use JGit's test suite which is located in the `org.spearce.jgit.test` folder. It uses JUnit to test the different parts of the library and relies on various input files located in the folder.
+If you intend to develop and extend JGit, you probably want to check that you didn't break anything. To accomplish this you can use JGit's test suite which is located in the `org.spearce.jgit.test` folder. It uses JUnit to test the different parts of the library and relies on various input files located in the folder.
 
 == Coverage ==
 
