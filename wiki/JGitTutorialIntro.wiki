@@ -51,7 +51,7 @@ The most commonly used commands are:
  version  Display the version of jgit
 
 }}}
-The commands are modeled after their corresponding command in the git CLI. We will not cover all the commands here but simple give some examples.
+The commands are modeled after their corresponding command in the git CLI. We will not cover all the commands here, but simply give some examples.
 
 == Inspecting the Repository ==
 
