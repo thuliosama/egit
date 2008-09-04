@@ -1,0 +1,19 @@
+#summary Introduction to browsing through the repository history.
+
+= Revision Walking =
+
+Git is all about history.
+
+== Basics ==
+
+ * RevWalk
+ * RevCommit
+
+== Filters ==
+
+ * Author/committer filters
+ * Message
+
+== Reducing Memory Usage ==
+
+ * Hints to reduce object creation by extending RevCommit and RevWalk.
