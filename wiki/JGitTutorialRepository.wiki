@@ -34,7 +34,7 @@ try {
 }}}
 When creating repositories with JGit, no hooks will be installed.
 
-*Note* Keep in mind that if creation of the new repository fails, the directories and files already created on disk are left untouched!
+*Note:* If creation of the new repository fails, the directories and files already created on disk are left untouched!
 
 == Repository References ==
 
