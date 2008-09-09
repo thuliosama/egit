@@ -22,4 +22,4 @@ There are currently no best practices for error handling and diagnosing why the 
 
 == Limitations ==
 
-JGit is still under development and so naturally there are features that are not yet supported. For example, JGit does not have its own diff engine for generating patches. You will also not find a way to apply a patch. In general, however, all the features for accessing the content of git repositories are fully supported. During the tutorial limitations will be listed if they are deemed important.
+JGit is still under development and so naturally there are features that are not yet supported. For example, JGit does not have its own diff engine for generating patches. You will also not find a way to automatically run the hooks installed in a repository. In general, however, all the features for accessing the content of git repositories are fully supported. During the tutorial limitations will be listed if they are deemed important.
