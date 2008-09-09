@@ -36,6 +36,10 @@ When creating repositories with JGit, no hooks will be installed.
 
 *Note:* If creation of the new repository fails, the directories and files already created on disk are left untouched!
 
+== The Configuration File ==
+
+ * Getting and setting things from/in .git/config
+
 == Repository References ==
 
 Once the Repository has been instantiated, information about branches and other repository references are available. As a first example let's print the name of the current branch:
@@ -71,17 +75,11 @@ try {
 }
 }}}
 
-As a final note, all repository references are available as a map via the `getAllRefs()` method. The mapping is to instances of the Ref class, which encapsulates both the reference name and ID.
-
-== The Configuration File ==
-
- * Getting and setting things from/in .git/config
+As a final note, all repository references are available as a map via the `getAllRefs()` method. The mapping is to instances of the Ref class, which allows easy access to both the reference name and ID.
 
 == The Basic Object Model ==
 
-If you are already familiar with how git stores data under the hood, the object model used by JGit should come quite natural for you.
-
- The tracked content itself is is organized hierarchical represented via
+If you are already familiar with how git stores data under the hood, the object model used by JGit should come quite natural to you. The content being tracked can be divided into different type: blob, tree, commit and tag. They are organized so that blobs are referenced by trees, trees are referenced by trees or commits, commits are referenced by commits, and tags can reference any object. This hierarchy are also used by JGit.
 
  * Inheritance: e.g. Commit "is an" ObjectId "is a" ..
 
