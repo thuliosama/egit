@@ -16,11 +16,9 @@ _Note: This tutorial is currently a work in progress. So for the time being most
 
 == Error Handling ==
 
-Many operations in the library may require some sort of IO operations, such as loading an object or pack file into memory. As a result, calls that touch a code path using IO access can throw exceptions.
+Many operations in the library may require some sort of IO operations, such as loading an object or pack file into memory. As a result, calls that touch a code path using IO access can throw exceptions. Through-out the examples in this tutorial, we will try to document how to interpret the meaning of the exceptions that can be encountered.
 
- * Best practice.
- * Overview of things in org.spearce.jgit.errors
- * Caveats?
+There are currently no best practices for error handling and diagnosing why the error occurred. However, keep in mind that choosing to ignore exceptions may lead to data loss. For an overview of JGit specific errors take a look at `org.spearce.jgit.errors`.
 
 == Limitations ==
 
