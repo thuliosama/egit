@@ -16,11 +16,10 @@ _Note: This tutorial is currently a work in progress. So for the time being most
 
 == Error Handling ==
 
-Many operations in the library may require some sort of IO operations, such as loading an object or pack file into memory. As a result, calls that touch a code path using IO access can throw exceptions. Through-out the examples in this tutorial, we will try to document how to interpret the meaning of the exceptions that can be encountered.
+Many operations in the library may require some sort of IO operations, such as loading an object or pack file into memory. As a result, calls that touch a code path using IO access can throw exceptions. Throughout the examples in this tutorial, we will try to document how to interpret the meaning of the exceptions that can be encountered.
 
 There are currently no best practices for error handling and diagnosing why the error occurred. However, keep in mind that choosing to ignore exceptions may lead to data loss. For an overview of JGit specific errors take a look at `org.spearce.jgit.errors`.
 
 == Limitations ==
 
- * Unsupported git features
- * Diff engine.
+JGit is still under development and so naturally there are features that are not yet supported. For example, JGit does not have its own diff engine for generating patches. You will also not find a way to apply a patch. In general, however, all the features for accessing the content of git repositories are fully supported. During the tutorial limitations will be listed if they are deemed important.
