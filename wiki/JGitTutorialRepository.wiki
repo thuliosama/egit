@@ -38,26 +38,40 @@ When creating repositories with JGit, no hooks will be installed.
 
 == Repository References ==
 
-Once the Repository has been instantiated, information about branches and other repository references are available. As a first example let's get the name of the current branch:
+Once the Repository has been instantiated, information about branches and other repository references are available. As a first example let's print the name of the current branch:
 {{{
 String head = repo.getFullBranch();
 if (head.startsWith("refs/heads/")) {
-        // Print the name of the current branch with "refs/heads/" stripped.
-        System.out.println(repo.getBranch());
+        // Print branch name with "refs/heads/" stripped.
+        System.out.println("Current branch is " + repo.getBranch());
 }
 }}}
 
-about branches and configuration file such as branches,
+As the name suggests repository references are "symbolic" links into the tracked content, and so often you are not interested in the actual reference, but in the what is being referenced. A first step to get there is to resolve the reference of interest. In the following example, we want to extend the previous example to also list the revision ID of the current branch.
+{{{
+try {
+        // The following could also have been done using repo.resolve("HEAD")
+        ObjectId id = repo.resolve(repo.getFullBranch());
+        System.out.println("Branch " + repo.getBranch() + " points to " + id.name());
+} catch (IOException ioe) {
+        // Failed to resolve.
+}
+}}}
 
-kind of factory for accessing objects in the tracked content and 
+The `resolve()` method supports most of the revision expressions supported by git and can serve as an easy way to obtain the ID of the parent of a commit, or the tree ID of a commit.
+{{{
+try {
+        ObjectId prev = repo.resolve("HEAD^");
+        ObjectId tree = repo.resolve("HEAD^{tree}");
+        System.out.println("HEAD has parent " + prev.name() + " and tree " + tree.name());
+} catch (RevisionSyntaxException rse) {
+        // Syntax error in the revision expression, e.g. HEAD~foo. or HEAD^{foo}
+} catch (IncorrectObjectTypeException rse) {
+        // Type expression applied to incorrect type, e.g. using ^{tree} on blob ID.
+}
+}}}
 
-to working with git repositories, whether it is traversing the versioned data or reading the meta-data. You can think of the Repository class as a cache that once created serves as a cache for the various resources provided by the repository on disk
-
- such as as branch information and configuration files. 
-
-
-
- * resolve
+As a final note, all repository references are available as a map via the `getAllRefs()` method. The mapping is to instances of the Ref class, which encapsulates both the reference name and ID.
 
 == The Configuration File ==
 
