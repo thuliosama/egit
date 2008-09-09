@@ -61,9 +61,9 @@ try {
 The `resolve()` method supports most of the revision expressions supported by git and can serve as an easy way to obtain the ID of the parent of a commit, or the tree ID of a commit.
 {{{
 try {
-        ObjectId prev = repo.resolve("HEAD^");
+        ObjectId parent = repo.resolve("HEAD^");
         ObjectId tree = repo.resolve("HEAD^{tree}");
-        System.out.println("HEAD has parent " + prev.name() + " and tree " + tree.name());
+        System.out.println("HEAD has parent " + parent.name() + " and tree " + tree.name());
 } catch (RevisionSyntaxException rse) {
         // Syntax error in the revision expression, e.g. HEAD~foo. or HEAD^{foo}
 } catch (IncorrectObjectTypeException rse) {
