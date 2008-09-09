@@ -2,13 +2,77 @@
 
 = The Repository =
 
-Introduction to the Repository class.
+All git related work can be said to somehow happen in the context of a repository. The repository is where git stores all its data, whether it is the content being tracked or the various "meta-data" containing state information. In JGit, a repository is represented by the Repository class. This class serves as the main entry-point for accessing the different resources provided by the repository on disk.
 
-== Creating a new repository ==
+== Setting Up a Repository ==
 
- * create()
- * Caveats? No hooks.
+To instantiate a repository, a `java.io.File` object representing the absolute path of the repository must be given. For non-bare repositories, this means that the `.git` directory should also be included, as in the code below.
+{{{
+try {
+        File gitDir = new File("/path/to/repo/.git");
+        Repository repo = new Repository(gitDir);
+        // ... use the repository ...
+        repo.close();
+} catch (IOException ex) {
+        // The repository exists, but is inaccessible!
+}
+}}}
+
+If you want to create a completely new repository, the Repository class can also help you.
+Using the `create()` method it will initialize an empty repository for you on disk using the path given via the File object.
+{{{
+try {
+        File gitDir = new File("/path/to/new-repo/.git");
+        Repository repo = new Repository(gitDir);
+        repo.create();
+        // ... use the new repository ...
+} catch (IllegalStateException ise) {
+        // The repository already exists!
+} catch (IOException ioe) {
+        // Failed to create the repository!
+}
+}}}
+When creating repositories with JGit, no hooks will be installed.
+
+*Note* Keep in mind that if creation of the new repository fails, the directories and files already created on disk are left untouched!
+
+== Repository References ==
+
+Once the Repository has been instantiated, information about branches and other repository references are available. As a first example let's get the name of the current branch:
+{{{
+String head = repo.getFullBranch();
+if (head.startsWith("refs/heads/")) {
+        // Print the name of the current branch with "refs/heads/" stripped.
+        System.out.println(repo.getBranch());
+}
+}}}
+
+about branches and configuration file such as branches,
+
+kind of factory for accessing objects in the tracked content and 
+
+to working with git repositories, whether it is traversing the versioned data or reading the meta-data. You can think of the Repository class as a cache that once created serves as a cache for the various resources provided by the repository on disk
+
+ such as as branch information and configuration files. 
+
+
+
+ * resolve
 
 == The Configuration File ==
 
  * Getting and setting things from/in .git/config
+
+== The Basic Object Model ==
+
+If you are already familiar with how git stores data under the hood, the object model used by JGit should come quite natural for you.
+
+ The tracked content itself is is organized hierarchical represented via
+
+ * Inheritance: e.g. Commit "is an" ObjectId "is a" ..
+
+ * ObjectId
+ * Commit
+ * Tag
+ * Tree
+ * Blob
