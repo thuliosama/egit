@@ -14,11 +14,11 @@ _Note: This tutorial is currently a work in progress. So for the time being most
  * Speed?
  * Extensible
 
-== The Basic Object Model ==
+=== The Basic Object Model ===
 
-If you are already familiar with how git stores data in the repository, the object model used by JGit should come quite natural to you. The content being tracked can be divided into different types of objects: blob, tree, commit and tag. They are organized into a hierarchy so that blobs are referenced by trees, trees are referenced by trees or commits, commits are referenced by commits, and tags can reference any object. Each object is uniquely identified by a hash value derived from its content. The object ID allows you to easily address any object.
+If you are already familiar with how git stores data in the repository, JGit's approach to representing repository objects should come quite natural to you. As we shall see, there are various different frameworks for accessing the objects in the repository. One is very light weight and suitable for revision walking, and the other is richer in features and targeted for more specific work flows where you, for example, need to be able to modify the in-memory representation of an object. This design choice has been made to provide the developer with the choice between the best possible performance and or convenience depending on what task needs to be solved.
 
-At the core of JGit's object model is the !ObjectId. It serves as the unifying way to address the objects in the repository. It is also the base class for some of the types representing repository objects. As we shall see, there are various different "views" of the objects in the repository. One is very light weight and suitable for revision walking, and the other is richer in features and targeted for more specific work flows where you, for example, need to be able to modify the in-memory representation of an object. This design choice has been made to provide better performance and or convinience depending on what task needs to be solved.
+An important feature of git repositories is the ability to easily address any content by an ID. In JGit, this is modeled using the !ObjectId class, which serves as the unifying way to address the objects in the repository. It is also the base class for some of the light weight types representing repository objects.
 
 == Error Handling ==
 
