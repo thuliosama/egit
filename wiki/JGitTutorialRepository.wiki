@@ -91,7 +91,7 @@ if (name == null || email == null) {
 The configuration file is divided into sections. In the above example, we ask for the "name" and "email" variables for the "user" section. Git also supports subsections, which is primarily used for branch and remote settings. When the subsection is not used `null` is passed.
 {{{
 RepositoryConfig config = repo.getConfig();
-String originUrl = config.getString("remote", "origin", "url");
+String url = config.getString("remote", "origin", "url");
 if (url != null) {
 	System.out.println("Origin comes from " + url);
 }
