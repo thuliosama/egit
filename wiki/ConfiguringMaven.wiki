@@ -1,0 +1,23 @@
+#summary Setting up your project to use the JGit Maven 2 repository
+#labels Featured
+
+= Configuring Maven =
+
+Snapshots of JGit are available via the Google Code project area for use in [http://maven.apache.org/ Maven 2] projects. The update policy is to synchronize the snapshots a few times a month depending on the number of changes and whether notable changes have been made.
+
+To use the snapshot repository from your Maven project, add the following element to the `<repositories>` section of either your pom.xml or settings.xml:
+{{{
+<repository>
+    <id>jgit-snapshot-repository</id>
+    <url>http://egit.googlecode.com/svn/maven/snapshot-repository/</url>
+</repository>
+}}}
+
+Then add the element below to the `<dependencies>` section of your pom.xml:
+{{{
+<dependency>
+    <groupId>org.spearce</groupId>
+    <artifactId>jgit</artifactId>
+    <version>0.4-SNAPSHOT</version>
+</dependency>
+}}}
