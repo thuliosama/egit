@@ -16,4 +16,5 @@
    * [JGitTutorialEnd Lessons Learnt and Beyond]
 
  * Howtos
+   * [ConfiguringMaven How to use the JGit Maven repository]
    * [ConfiguringMylyn Setting up Mylyn to use this issue tracker]
