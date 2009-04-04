@@ -9,7 +9,7 @@
 
 = Getting repositories into Eclipse =
 
-== Git access in Eclipse
+== Git access in Eclipse ==
  * A toolbar / workbench menu is available if enabled in Window/Customize perspective. By default it is hidden.
  * The right-click/Team and Compare sumenus contains Git actions
  * Decorations can be enabled/customized in Window/Prefernces. Search for "git".
