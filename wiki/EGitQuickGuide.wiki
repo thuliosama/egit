@@ -1,9 +1,6 @@
 #summary EGit quick-guide
 
-= Introduction =
-
-Add your content here.
-
+== Acquire plugin ==
 
 == Installation ==
  * Acquire Ganymed (Eclipse 3.4) or later or a distro based on a suffiently recent Eclipse.
