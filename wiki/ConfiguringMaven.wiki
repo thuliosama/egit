@@ -9,7 +9,7 @@ To use the snapshot repository from your Maven project, add the following elemen
 {{{
 <repository>
     <id>jgit-snapshot-repository</id>
-    <url>http://egit.googlecode.com/svn/maven/snapshot-repository/</url>
+    <url>http://egit.googlecode.com/svn/maven/</url>
 </repository>
 }}}
 
@@ -18,6 +18,8 @@ Then add the element below to the `<dependencies>` section of your pom.xml:
 <dependency>
     <groupId>org.spearce</groupId>
     <artifactId>jgit</artifactId>
-    <version>0.4-SNAPSHOT</version>
+    <version>0.4.9</version>
 </dependency>
 }}}
+
+To get a more specific build version number, see [http://code.google.com/p/egit/source/browse/maven/org/spearce/jgit/maven-metadata.xml maven-metadata.xml].
