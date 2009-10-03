@@ -1,7 +1,6 @@
 #summary Project home page before moving to Eclipse
 
-
-EGit relies upon [http://repo.or.cz/w/jgit.git JGit] for the bulk of its implementation.
+EGit relies upon JGit for the bulk of its implementation.
 
 JGit is a 100% pure Java implementation of Git.  JGit is a BSD-licensed reusable library that carries no Eclipse dependencies, and very few (if any) dependencies beyond the Java 5 standard library.  To make it clear: JGit does _not_ in any way depend on the Eclipse plugin. They just happen to live in the same repository for the time being.
 
@@ -50,29 +49,29 @@ know related to JGit only can still be reported here.
 
 ==Git Repository==
 
-The JGit and EGit code are maintained in two Git repositories:
-{{{
-  git clone git://repo.or.cz/jgit.git
-  git clone git://repo.or.cz/egit.git
-}}}
-or
-{{{
-  git clone http://repo.or.cz/r/jgit.git
-  git clone http://repo.or.cz/r/egit.git
-}}}
+The JGit and EGit code are maintained in two Git repositories: _See [http://wiki.eclipse.org/EGit/Contributor_Guide EGit Contributor Guide] for current repositories_
 
-The current sources and project history can also be browsed online: [http://repo.or.cz/w/jgit.git JGit], [http://repo.or.cz/w/egit.git EGit].
+  *  git clone ~~git://repo.or.cz/jgit.git ~~
+  *  git clone ~~git://repo.or.cz/egit.git ~~
+
+or
+
+  *  git clone ~~http://repo.or.cz/r/jgit.git ~~
+  *  git clone ~~http://repo.or.cz/r/egit.git ~~
+
+
+The current sources and project history can also be browsed online: ~~[http://repo.or.cz/w/jgit.git JGit]~~, ~~[http://repo.or.cz/w/egit.git EGit]~~.
 
 ==Eclipse update site==
 
 The Eclipse Git Team provider can be installed via an update site. Point the update
-mechanism to http://www.jgit.org/updates. The pre-incubation updates are still available
-from the old url http://www.jgit.org/update-site.
+mechanism to ~~ http://www.jgit.org/updates ~~. The pre-incubation updates are still available
+from the old url ~~ http://www.jgit.org/update-site ~~.
 
 ==New Contributors==
 
 Want to get involved?  Check our "low hanging fruit" list of open issues, doing one or two can help you get introduced to the JGit library:
 
- * [http://code.google.com/p/egit/issues/list?q=Difficulty-Low&colspec=ID+Type+Status+Priority+Component+Difficulty+Summary Low hanging fruit]
+ * ~~[http://code.google.com/p/egit/issues/list?q=Difficulty-Low&colspec=ID+Type+Status+Priority+Component+Difficulty+Summary Low hanging fruit]~~
 
-See [http://repo.or.cz/w/egit.git?a=blob;f=SUBMITTING_PATCHES;hb=HEAD SUBMITTING_PATCHES] in the repository for instructions on how to submit patches.
+See ~~[http://repo.or.cz/w/egit.git?a=blob;f=SUBMITTING_PATCHES;hb=HEAD SUBMITTING_PATCHES]~~ in the repository for instructions on how to submit patches.
