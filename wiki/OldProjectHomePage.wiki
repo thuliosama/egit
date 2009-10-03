@@ -1,5 +1,7 @@
 #summary Project home page before moving to Eclipse
 
+This project has [http://www.eclipse.org/egit/ moved to Eclipse.org]
+
 EGit relies upon JGit for the bulk of its implementation.
 
 JGit is a 100% pure Java implementation of Git.  JGit is a BSD-licensed reusable library that carries no Eclipse dependencies, and very few (if any) dependencies beyond the Java 5 standard library.  To make it clear: JGit does _not_ in any way depend on the Eclipse plugin. They just happen to live in the same repository for the time being.
