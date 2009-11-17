@@ -1,5 +1,5 @@
 #summary Setting up Mylyn to use this issue tracker
-#labels Featured
+#labels Deprecated
 
 = Update Mylyn =
 
