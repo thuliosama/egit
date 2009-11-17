@@ -5,4 +5,6 @@
 
 = Outdated =
 
- * [http://code.google.com/p/egit/issues/list Old Issues]
+Please don't use the outdated issue tracker.
+
+[http://code.google.com/p/egit/issues/list Old Issues]
