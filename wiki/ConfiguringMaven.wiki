@@ -8,7 +8,7 @@ Snapshots of JGit are available via the Google Code project area for use in [htt
 To use the snapshot repository from your Maven project, add the following element to the `<repositories>` section of either your pom.xml or settings.xml:
 {{{
 <repository>
-    <id>jgit-snapshot-repository</id>
+    <id>jgit-maven-repository</id>
     <url>http://egit.googlecode.com/svn/maven/</url>
 </repository>
 }}}
@@ -16,10 +16,10 @@ To use the snapshot repository from your Maven project, add the following elemen
 Then add the element below to the `<dependencies>` section of your pom.xml:
 {{{
 <dependency>
-    <groupId>org.spearce</groupId>
-    <artifactId>jgit</artifactId>
-    <version>0.5.0</version>
+    <groupId>org.eclipse.jgit</groupId>
+    <artifactId>org.eclipse.jgit</artifactId>
+    <version>0.5.1.51-g96b2e76</version>
 </dependency>
 }}}
 
-To get a more specific build version number, see [http://code.google.com/p/egit/source/browse/maven/org/spearce/jgit/maven-metadata.xml maven-metadata.xml].
+To get a more specific build version number, see [http://code.google.com/p/egit/source/browse/maven/org/eclipse/jgit/jgit-parent/maven-metadata.xml].
