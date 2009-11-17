@@ -1,9 +1,7 @@
-#summary Issue tracker home page
-
 = Issue Trackers =
 
-  * [https://bugs.eclipse.org/bugs/buglist.cgi?classification=Technology;query_based_on=EGit_open;query_format=advanced;bug_status=UNCONFIRMED;bug_status=NEW;bug_status=ASSIGNED;bug_status=REOPENED;component=UI;product=EGit;known_name=EGit_open EGit Issue Tracker]
-  * [https://bugs.eclipse.org/bugs/buglist.cgi?classification=Technology;query_based_on=EGit_open;query_format=advanced;bug_status=UNCONFIRMED;bug_status=NEW;bug_status=ASSIGNED;bug_status=REOPENED;component=JGit;product=EGit;known_name=EGit_open JGit Issue Tracker]
+[https://bugs.eclipse.org/bugs/buglist.cgi?classification=Technology;query_based_on=EGit_open;query_format=advanced;bug_status=UNCONFIRMED;bug_status=NEW;bug_status=ASSIGNED;bug_status=REOPENED;component=UI;product=EGit;known_name=EGit_open EGit Issue Tracker]
+| [https://bugs.eclipse.org/bugs/buglist.cgi?classification=Technology;query_based_on=EGit_open;query_format=advanced;bug_status=UNCONFIRMED;bug_status=NEW;bug_status=ASSIGNED;bug_status=REOPENED;component=JGit;product=EGit;known_name=EGit_open JGit Issue Tracker]
 
 = Outdated =
 
