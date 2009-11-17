@@ -1,0 +1,9 @@
+= Wiki =
+
+[http://wiki.eclipse.org/EGit EGit and JGit Wiki]
+
+= Outdated =
+
+Please don't use the outdated wiki.
+
+[http://code.google.com/p/egit/w/list Old Wiki Pages]
